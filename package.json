@@ -1,8 +1,8 @@
 {
-  "name": "name-any-color",
-  "version": "0.0.0-dev.0",
-  "description": "Name any color in all formats.",
-  "repository": "https://github.com/RobinHaveneers/name-any-color.git",
+  "name": "name-a-color",
+  "version": "0.0.1",
+  "description": "Name a color in all formats.",
+  "repository": "https://github.com/RobinHaveneers/name-a-color.git",
   "author": "Robin Haveneers <haveneersrobin@gmail.com> (example.com)",
   "license": "MIT",
   "keywords": [

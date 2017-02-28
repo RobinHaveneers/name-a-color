@@ -1,63 +1,27 @@
 
-<h1 align="center">Name Any Color!</h1>
-
-<p align="center">
-  <img src="https://image.flaticon.com/icons/svg/0/61.svg" width="150">
-</p>
-
-<h3 align="center" style="font-family:monospace">DEVELOPERS ONLY</h3>
-
-### Default scripts
+# Name a Color!
 
 ```sh
-$ npm install           # Install dependencies 
-$ npm run build         # Build the source
-$ npm run build:watch   # Watch the build
-$ npm run test          # Run the tests
-$ npm run test:watch    # Watch the tests
-$ npm run cover         # Run the tests with coverage
-$ npm run cover:check   # Check if there is enough coverage
-$ npm run cover:report  # Push coverage report to codecov
-```
-
-### Setup Automated Releases
-
-```sh
-# Install the tools
-$ npm install -g semantic-release-cli
-$ npm install --save commitizen cz-conventional-changelog
-$ semantic-release-cli setup
-```
-
-```yml
-# Add script to Travis (replaces prepublish) and enable on the website
-# Also enable codecov for coverage
-branches:
-  only:
-    - master
-script:
-  - npm run cover
-  - npm run build
-after_success:
-  - npm run cover:report
+$ npm install --save name-a-color
 ```
 
 ```js
-// Update package.json with bins
-{
-  "scripts": { "commit": "git-cz" },
-  "czConfig": { "path": "node_modules/cz-conventional-changelog" }
-}
-```
+import { findColor } from '../src/index';
 
-```sh
-# You can now commit with automated releases
-$ git add .
-$ npm run commit
-```
+findColor('#9b59b6')); // Returns 'Purple Plum'
+findColor('8db600'));  // Returns 'Apple Green'
 
-<br />
-<p align="center">
-  <a href="https://js.org" target="_blank" title="JS.ORG | JavaScript Community">
-  <img src="https://logo.js.org/dark_horz.png" width="102" alt="JS.ORG Logo"/></a>
-</p>
+// Supports all of these formats
+findColor('#a9d91d');
+findColor('a9d91d');
+findColor('#eee');
+findColor('rgb(124, 96, 200)');
+findColor('rgb(99%, 40%, 0%)');
+findColor('rgba(124, 96, 200, .4)');
+findColor('hsl(120, 75%, 75%)');
+findColor('hsla(120, 75%, 75%, .1)');
+findColor('hsv(220, 47%, 12%)');
+findColor('hsva(120, 75%, 75%, 0)');
+findColor([0, 4, 255, 120]);
+findColor(["RGB", .5, .1, .6, .9]);
+```
