@@ -41,6 +41,8 @@
     "babel-preset-env": "^1.1.8",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-flowtype": "^2.30.0",
