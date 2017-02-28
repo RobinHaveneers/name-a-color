@@ -1,5 +1,10 @@
 
 # Name a Color!
+<img src="https://img.shields.io/travis/RobinHaveneers/name-a-color.svg?style=flat-square"/>
+<img src="https://img.shields.io/npm/v/name-a-color.svg?style=flat-square"/>
+<img src="https://img.shields.io/npm/l/name-a-color.svg?style=flat-square"/>
+<img src="https://img.shields.io/codecov/c/github/RobinHaveneers/name-a-color.svg?style=flat-square"/>
+<img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square"/>
 
 ```sh
 $ npm install --save name-a-color
