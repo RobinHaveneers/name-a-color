@@ -1,8 +1,8 @@
-// import { expect } from 'chai';
-import { findHexName } from '../src/index';
+import { expect } from 'chai';
+import { findColor } from '../src/index';
 
 describe('Default tests', () => {
   it('Should be something', () => {
-    console.log(findHexName('#9b59b6'));
+    expect(findColor('#9b59b6')).to.equal('Purple Plum');
   });
 });
