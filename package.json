@@ -5,8 +5,13 @@
   "repository": "https://github.com/RobinHaveneers/name-any-color.git",
   "author": "Robin Haveneers <haveneersrobin@gmail.com> (example.com)",
   "license": "MIT",
-  "keywords": [ "name-any-color" ],
-  "files": [ "dist", "README.md" ],
+  "keywords": [
+    "name-any-color"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "main": "./dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -23,6 +28,7 @@
   },
   "dependencies": {
     "chalk": "^1.1.3",
+    "color-names": "^2.0.0",
     "winston": "^2.3.0"
   },
   "devDependencies": {
